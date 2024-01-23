@@ -13,3 +13,22 @@
  *= require_tree .
  *= require_self
  */
+
+ .list-unstyled a {
+  text-decoration: none;
+  color: black;
+ }
+
+ .list-unstyled a:hover {
+  color: blue;
+  text-decoration: underline blue;
+ }
+
+ button a {
+  color: white;
+  text-decoration: none;
+ }
+
+ button a:hover {
+  color: white;
+ }

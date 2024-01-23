@@ -1,0 +1,11 @@
+<h1>Your Tasks</h1>
+<ul>
+  <% @tasks.each do |task| %>
+    <li class="list-unstyled">
+      <%= content_tag(:i, '', class: "fa-regular #{task.completed? ? 'fa-square-check' : 'fa-square'}") %>
+      <%=link_to task.title, task_path(task)%>
+    </li>
+  <% end %>
+</ul>
+
+<button class="btn btn-primary"><%= link_to "Create a new task", new_task_path %></button>
